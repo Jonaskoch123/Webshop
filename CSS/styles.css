@@ -1,0 +1,168 @@
+@font-face {
+    font-family: porscha-font;
+    src: url('../Bilder/911-porscha/911v2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.navbar ul{
+    background-color: rgba(0, 0, 0, 0.35);
+    list-style-type: none;
+    padding: 10px;
+    margin: 0px;
+    overflow: hidden;
+    font-size: 25px;
+    font-family: porscha-font;
+}
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(73, 69, 69);
+    border-radius: 15px;
+}
+.navbar li{
+    float: left;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.videoPorsche video{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 15px; 
+    border: 3px solid #ccc; 
+    border-radius: 12px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 30px; 
+    resize: vertical 
+}
+
+input[type=submit] {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    
+    background-color: rgba(0, 0, 0, 0.35);
+    color: white;
+    padding: 20px 40px;
+    border: none;
+    border-radius:20px;
+    cursor: pointer; 
+}
+
+
+input[type=submit]:hover {
+    background-color: rgba(62, 58, 58, 0.7);
+}
+
+
+@font-face {
+    font-family: porscha-font_1;
+    src: url('../Bilder/911-porscha/911v2b.ttf') format('truetype');
+    font-weight: large;
+    font-style: normal;
+}
+
+.contact {
+    border-radius: 100px;
+    padding: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name{
+    padding: 15px;
+}
+#name1{
+    text-align: center;
+}
+
+.porsche_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: 70px ;
+    text-align: center;
+    font-family: arial;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.price {
+    color: #474545;
+    font-size: 22px;
+}
+.porsche_car{
+    border-radius: 15px;
+}
+.porsche_card button {
+    border: #cccccc;
+    border-radius: 15px;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: rgba(90, 87, 87, 0.7);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+.porsche_card button:hover {
+    opacity: 0.7;
+
+}
+.search{
+    text-align: center;
+}
+
+
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.Datenschutz{
+    padding: 10px;
+}
+    
+.Rückgaberecht{
+    padding: 10px;
+}
+main{
+    padding: 20px;
+}
