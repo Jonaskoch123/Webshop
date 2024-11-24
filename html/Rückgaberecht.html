@@ -1,20 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produkte</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link href="../CSS/styles.css" rel="stylesheet">
+    <link rel="icon" href="../Bilder/porsche_cars/icons8-porsche-144.png">
 </head>
 <body>
 <nav class="navbar">
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <ul>
         <li><a href="start.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="products.html">Produkte</a></li>
         <li><a href="contact.html">Kontakt</a></li>
     </ul>
 </nav>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.navbar ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
 
 <main class="Rückgaberecht">
     <section id="widerrufsrecht">
@@ -104,7 +117,7 @@
       </section>
 </main>
 
-<footer >
+<footer class="footter_all">
 
     <p>&copy; 2024 Jonas Koch</p>
     <a href="Datenschutzerklärung.html" style="color: white;">Datenschutz.</a>

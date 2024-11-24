@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelle</title>
+    <link href="../CSS/styles.css" rel="stylesheet">
+    <link rel="icon" href="../Bilder/porsche_cars/icons8-porsche-144.png">
+</head>
+<body>
+<nav class="navbar">
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul>
+        <li><a href="start.html">Home</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.navbar ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+
+
+<h1 style="font-family: porscha-font_2; text-align: center">911</h1>
+
+<div class="products">
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20150021.png" alt="911_carrera" style="border-radius: 15px; width: 100%;">
+        <h1>911 Carrera</h1>
+        <p class="price">Ab EUR 128.700,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='911_carrera.html';" value="Mehr Erfahren">
+
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20150101.png" alt="911_Targa_4_GTS" style="border-radius: 15px; width: 100%;" >
+        <h1>911 Targa 4 GTS</h1>
+        <p class="price">Ab EUR 192.900,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='911_Targa_4_GTS.html';" value="Mehr Erfahren">
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20150111.png" alt="911_GT3_RS" style="border-radius: 15px; width: 100%" >
+        <h1>911 GT3 RS</h1>
+        <p class="price">Ab EUR 248.157,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='911_GT3_RS.html';" value="Mehr Erfahren">
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20150122.png" alt="911_Dakar" style="border-radius: 15px; width: 100%" >
+        <h1>911 Dakar</h1>
+        <p class="price">Ab EUR 222.020,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='911_Dakar.html';" value="Mehr Erfahren">
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20150134.png" alt="911_ST" style="border-radius: 15px; width: 100%" >
+        <h1>911 S/T</h1>
+        <p class="price">Ab EUR 292.187,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='911_ST.html';" value="Mehr Erfahren">
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20150153.png" alt="911_GT3" style="border-radius: 15px; width: 100%">
+        <h1>911 GT3</h1>
+        <p class="price">Ab EUR 209.000,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='911_GT3.html';" value="Mehr Erfahren">
+    </div>
+</div>
+
+<footer class="footter_all">
+
+    <p>&copy; 2024 Jonas Koch</p>
+    <a href="Datenschutzerklärung.html" style="color: white;">Datenschutz.</a>
+    <a href="Impressum.html" style="color: white;">Impresum.</a>
+    <a href="Rückgaberecht.html" style="color: white;">Rückgaberecht.</a>
+</footer>
+
+    
+</body>
+</html>

@@ -4,9 +4,75 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: porscha-font_1;
+    src: url('../Bilder/911-porscha/911v2b.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: porscha-font_2;
+    src: url('../Bilder/911-porscha/911v2li.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .contact {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    form h1 {
+        font-size: 24px;
+    }
+
+    input[type="submit"] {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .impressum_responsive {
+        padding: 15px;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
 body{
     margin: 0px;
+    background-color: #efefef;
+    font-family: sans-serif;
 }
+
 
 h1{
     text-align: center;
@@ -15,34 +81,127 @@ h1{
 .products {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 200px;
 }
 
-.navbar ul{
-    background-color: rgba(0, 0, 0, 0.35);
-    list-style-type: none;
-    padding: 10px;
-    margin: 0px;
-    overflow: hidden;
-    font-size: 25px;
-    font-family: porscha-font;
+.porsche_card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-.navbar a{
-    color: aliceblue;
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+.products_ {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 200px;
 }
-.navbar a:hover{
-    background-color: rgb(73, 69, 69);
+
+
+
+.porsche_card img {
+    width: 100%;
     border-radius: 15px;
 }
-.navbar li{
-    float: left;
+
+.porsche_card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin: 40px ;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    padding: 60px;
+}
+
+.price {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.button_card {
+    background-color: #403d39;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button_card:hover {
+    background-color: #eb5e28;
+    transition: background-color 0.9s;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+}
+@media (max-width: 1300px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .porsche_card {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 840px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
 }
 
 p{
     font-size: 20px;
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 10px;
+    }
+
+    form h1 {
+        font-size: 22px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+    }
 }
 
 
@@ -51,48 +210,117 @@ p{
     height: auto;
     display: block;
     margin: auto;
-}
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 15px; 
-    border: 3px solid #ccc; 
-    border-radius: 12px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 30px; 
-    resize: vertical 
-}
-
-input[type=submit] {
-    margin-left: 50%;
-    transform: translateX(-50%);
-    
-    background-color: rgba(0, 0, 0, 0.35);
-    color: white;
-    padding: 20px 40px;
-    border: none;
-    border-radius:20px;
-    cursor: pointer; 
-}
-
-
-input[type=submit]:hover {
-    background-color: rgba(62, 58, 58, 0.7);
-}
-
-
-@font-face {
-    font-family: porscha-font_1;
-    src: url('../Bilder/911-porscha/911v2b.ttf') format('truetype');
-    font-weight: large;
-    font-style: normal;
+    z-index: 0;
 }
 
 .contact {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form h1 {
+    text-align: center;
+    font-family: porscha-font_1;
+    font-size: 30px;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-size: 15px;
+}
+
+select {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    resize: none;
+}
+textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: none;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #eb5e28;
+    transition: background-color 0.9s;
+}
+
+.navbar {
+    background-color: rgb(37, 36, 34);
+    #display: flex;
+    #justify-content: space-between;
+    #align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.9s;
+}
+
+.navbar a:hover {
+    background-color: rgb(235, 94, 40);
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 3px 0;
+}
+
+
+
+.contact {
     border-radius: 100px;
-    padding: 100px;
+    padding: 200px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .name{
@@ -102,49 +330,49 @@ input[type=submit]:hover {
     text-align: center;
 }
 
-.porsche_card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: 70px ;
-    text-align: center;
-    font-family: arial;
-    border-radius: 15px;
-    padding: 15px;
+.Datenschutz {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.price {
-    color: #474545;
-    font-size: 22px;
+.Datenschutz h1, .Datenschutz h2, .Datenschutz h3 {
+    color: #333;
 }
-.porsche_car{
-    border-radius: 15px;
+
+.Datenschutz p {
+    color: #666;
 }
-.porsche_card button {
-    border: #cccccc;
-    border-radius: 15px;
-    outline: 0;
-    padding: 12px;
-    color: white;
-    background-color: rgba(90, 87, 87, 0.7);
-    text-align: center;
-    cursor: pointer;
+
+.Rückgaberecht{
+    padding: 10px;
+}
+
+main{
+    padding: 20px;
+}
+
+.impressum_responsive {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+.footter_all{
+    left: 0;
+    bottom: 0;
     width: 100%;
-    font-size: 18px;
-
-}
-
-.porsche_card button:hover {
-    opacity: 0.7;
-
-}
-.search{
+    background-color: #333333;
+    color: rgb(255, 255, 255);
     text-align: center;
+    text-decoration: none;
 }
-
-
-
-
-footer {
+.footter_impresum{
     position: fixed;
     left: 0;
     bottom: 0;
@@ -152,17 +380,31 @@ footer {
     background-color: #333333;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 10px;
     text-decoration: none;
 }
 
-.Datenschutz{
-    padding: 10px;
-}
-    
-.Rückgaberecht{
-    padding: 10px;
-}
-main{
-    padding: 20px;
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.35);
+        position: absolute;
+        top: 47px;
+        right: 0;
+        width: 100%;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
 }

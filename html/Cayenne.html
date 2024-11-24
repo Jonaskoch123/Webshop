@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelle</title>
+    <link href="../CSS/styles.css" rel="stylesheet">
+    <link rel="icon" href="../Bilder/porsche_cars/icons8-porsche-144.png">
+</head>
+<body>
+<nav class="navbar">
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul>
+        <li><a href="start.html">Home</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.navbar ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+<div class="products_">
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20163819.png" alt="Cayenne" style="border-radius: 15px; width: 100%;" >
+        <h1>Cayenne</h1>
+        <p class="Infos">Der Porsche Cayenne ist ein luxuriöser SUV, der außergewöhnliche Performance mit viel Platz und Komfort kombiniert. Mit einer Auswahl an leistungsstarken Motoren, einschließlich V6- und V8-Optionen, bietet er sowohl kraftvolle Beschleunigung als auch effiziente Fahrdynamik. Der Allradantrieb sorgt für Stabilität und Kontrolle auf verschiedensten Untergründen, während die präzise Lenkung und das adaptive Fahrwerk den Cayenne zu einem sportlichen Erlebnis machen. Der Innenraum ist mit hochwertigen Materialien ausgestattet und bietet modernste Technologie für ein luxuriöses Fahrerlebnis. Ob auf der Autobahn oder im Gelände – der Porsche Cayenne verbindet die Leistungsfähigkeit eines Sportwagens mit der Vielseitigkeit eines SUV.</p>
+    </div>
+</div>
+
+<footer class="footter_all">
+
+    <p>&copy; 2024 Jonas Koch</p>
+    <a href="Datenschutzerklärung.html" style="color: white;">Datenschutz.</a>
+    <a href="Impressum.html" style="color: white;">Impresum.</a>
+    <a href="Rückgaberecht.html" style="color: white;">Rückgaberecht.</a>
+</footer>
+
+
+</body>
+</html>

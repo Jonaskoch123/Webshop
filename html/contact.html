@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link href="../CSS/styles.css" rel="stylesheet">
+    <link rel="icon" href="../Bilder/porsche_cars/icons8-porsche-144.png">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="start.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="products.html">Produkte</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul>
+        <li><a href="start.html">Home</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.navbar ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
 
 
     
 <div class="contact">
-    <form action="">
+    <form>
         <h1 id="name1" style="font-family: porscha-font_1 ;">Kontaktieren sie uns</h1>
         <label for="about">Betreff</label>
         <select required id="about" name="about" >
-            <option value="choose" disabled selected style="font-size: large;">Bitte Auswählen</option>
+            <option value="" disabled selected style="font-size: large;">Bitte Auswählen</option>
             <option value="problem_order">Es gibt ein Problem mit meiner Bestellung</option>
             <option value="problem_car">Es gibt ein Problem mit meinem Atuo</option>
             <option value="other">Anderes</option>
         </select>
 
         <label for="name">Name</label>
-        <textarea id="name" name="name" placeholder="Ihr name.." style="font-size: large;"></textarea>
+        <textarea id="name" name="name" placeholder="Ihr Name.." style="font-size: large;"></textarea>
 
         <label for="subject">Nachricht</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="font-size: large;" ></textarea>
+        <textarea id="subject" name="subject" placeholder="Berichten Sie uns..." style="font-size: large;" ></textarea>
 
-        <input type="submit" value="Submit">
+        <input type="submit" value="Abschicken">
 
     </form>
 </div>
 
-<footer >
+<footer class="footter_all" >
 
     <p>&copy; 2024 Jonas Koch</p>
     <a href="Datenschutzerklärung.html" style="color: white;">Datenschutz.</a>

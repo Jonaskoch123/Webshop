@@ -1,36 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porsche</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-</ul>
-
-    <nav class="navbar">
-        <ul>
-            <li><a href="start.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="products.html">Produkte</a></li>
-            <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-    </nav>
-
-    <script> 
-        $(function(){
-          $("#footer").load("footer.html"); 
-        });
-        </script> 
+    <link href="../CSS/styles.css" rel="stylesheet">
+    <link rel="icon" href="../Bilder/porsche_cars/icons8-porsche-144.png">
 </head>
 <body>
+
+<nav class="navbar">
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul>
+        <li><a href="start.html">Home</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.navbar ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
     <div class="videoPorsche">
         <video autoplay  muted loop >
-        <source src="../Bilder/Porsche%20911%20Turbo%20S%20Video.mp4" type="video/mp4" />
+        <source src="../Bilder/porsche_cars/Porsche%20911%20Turbo%20S%20Video.mp4" type="video/mp4" />
     </video></div>
 
+    <h1 style="font-family: porscha-font_2; text-align: center">Modelle</h1>
 
+<div class="products">
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-15%20223525.png" alt="Porsche 911" style="border-radius: 15px; width: 100%;" >
+        <h1>Porsche 911</h1>
+        <p class="price">Ab 128.700,00€</p>
+        <input class="button_card" type="button" onclick="window.location.href='products_911.html';" value="911 Modelle"/>
+    </div>
 
-      
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-15%20223117.png" alt="Porsche 718" style="border-radius: 15px; width: 100%;" >
+        <h1>Porsche 718</h1>
+        <p class="price">Ab 63.945,00€</p>
+        <br>
+        <input class="button_card" type="button" onclick="window.location.href='products_718.html';" value="718 Modelle"/>
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-15%20223540.png" alt="Porsche Taycan" style="border-radius: 15px; width: 100%" >
+        <h1>Porsche Taycan</h1>
+        <p class="price">Ab 101.500,00€</p>
+        <input class="button_card" type="button" onclick="window.location.href='products_taycan.html';" value="Taycan Modelle" />
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-15%20223551.png" alt="Porsche Panamera" style="border-radius: 15px; width: 100%" >
+        <h1>Porsche Panamera</h1>
+        <p class="price">Ab 110.900,00€</p>
+        <input class="button_card" type="button" onclick="window.location.href='products_panamera.html';" value="Panamera Modelle" />
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-15%20223606.png" alt="Porsche Macan" style="border-radius: 15px; width: 100%" >
+        <h1>Porsche Macan</h1>
+        <p class="price">Ab 80.700,00€</p>
+        <input class="button_card" type="button" onclick="window.location.href='products_macan.html';" value="Macan Modelle" />
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-15%20223619.png" alt="Porsche Cayenne" style="border-radius: 15px; width: 100%"  >
+        <h1>Porsche Cayenne</h1>
+        <p class="price">Ab 99.600,00€</p>
+        <input class="button_card" type="button" onclick="window.location.href='products_cayenne.html';" value="Cayenne Modelle" />
+    </div>
+</div>
+
+    <footer class="footter_all"  >
+
+        <p>&copy; 2024 Jonas Koch</p>
+        <a href="Datenschutzerklärung.html" style="color: white;">Datenschutz.</a>
+        <a href="Impressum.html" style="color: white;">Impresum.</a>
+        <a href="Rückgaberecht.html" style="color: white;">Rückgaberecht.</a>
+    </footer>
+
 </body>
 </html>
  

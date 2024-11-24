@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelle</title>
+    <link href="../CSS/styles.css" rel="stylesheet">
+    <link rel="icon" href="../Bilder/porsche_cars/icons8-porsche-144.png">
+</head>
+<body>
+<nav class="navbar">
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul>
+        <li><a href="start.html">Home</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.navbar ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+
+
+<h1 style="font-family: porscha-font_2; text-align: center">718</h1>
+
+<div class="products">
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20162516.png" alt="718 Cayman" style="border-radius: 15px; width: 100%;">
+        <h1>718 Cayman</h1>
+        <p class="price">Ab EUR 63.945,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='718_Cayman.html';" value="Mehr Erfahren">
+
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20150221.png" alt="718 Boxster" style="border-radius: 15px; width: 100%;" >
+        <h1>718 Boxster</h1>
+        <p class="price">Ab EUR 65.968,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='718_Boxster.html';" value="Mehr Erfahren">
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20150230.png" alt="Cayman GT4 RS" style="border-radius: 15px; width: 100%" >
+        <h1>Cayman GT4 RS</h1>
+        <p class="price">Ab EUR 158.700,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='718_Cayman_GT4_RS.html';" value="Mehr Erfahren">
+    </div>
+
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-23%20150242.png" alt="Spyder RS" style="border-radius: 15px; width: 100%" >
+        <h1>Spyder RS</h1>
+        <p class="price">Ab EUR 158.700,00 inkl. MwSt.</p>
+        <input class="button_card" type="button" onclick="window.location.href='718_Spyder_RS.html';" value="Mehr Erfahren">
+    </div>
+
+
+
+
+
+</div>
+
+<footer class="footter_all">
+
+    <p>&copy; 2024 Jonas Koch</p>
+    <a href="Datenschutzerklärung.html" style="color: white;">Datenschutz.</a>
+    <a href="Impressum.html" style="color: white;">Impresum.</a>
+    <a href="Rückgaberecht.html" style="color: white;">Rückgaberecht.</a>
+</footer>
+
+
+</body>
+</html>

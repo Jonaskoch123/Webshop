@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelle</title>
+    <link href="../CSS/styles.css" rel="stylesheet">
+    <link rel="icon" href="../Bilder/porsche_cars/icons8-porsche-144.png">
+</head>
+<body>
+<nav class="navbar">
+    <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <ul>
+        <li><a href="start.html">Home</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.navbar ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
+
+<div class="products_">
+    <div class="porsche_card">
+        <img src="../Bilder/porsche_cars/Screenshot%202024-11-15%20223540.png" alt="Taycan 4 Cross Turismo" style="border-radius: 15px; width: 100%;" >
+        <h1>Taycan 4 Cross Turismo</h1>
+        <p class="Infos">Der Porsche Taycan 4 Cross Turismo ist die geländegängige Variante des vollelektrischen Sportwagens und bietet neben herausragender Leistung auch viel Flexibilität. Mit einem Allradantrieb und einer erhöhten Bodenfreiheit meistert er sowohl asphaltierte Straßen als auch anspruchsvollere Geländepassagen mühelos. Die leistungsstarken Elektromotoren garantieren sofortige Beschleunigung und eine beeindruckende Reichweite, während die schnelle Ladefunktion für längere Fahrten sorgt. Im Innenraum gibt es modernste Technologie und großzügigen Platz für Passagiere und Gepäck. Als elektrisches Fahrzeug mit Allradtechnik und hohem Komfort richtet sich der Taycan 4 Cross Turismo an Fahrer, die sportliche Performance und Vielseitigkeit in einem luxuriösen Paket suchen.</p>
+    </div>
+</div>
+
+<footer class="footter_all">
+
+    <p>&copy; 2024 Jonas Koch</p>
+    <a href="Datenschutzerklärung.html" style="color: white;">Datenschutz.</a>
+    <a href="Impressum.html" style="color: white;">Impresum.</a>
+    <a href="Rückgaberecht.html" style="color: white;">Rückgaberecht.</a>
+</footer>
+
+
+</body>
+</html>
