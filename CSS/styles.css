@@ -186,11 +186,23 @@ p{
     font-size: 20px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 582px) {
+    .name1{
+        font-size: 12px;
+    }
     .contact {
-        padding: 10px;
+        padding: 6px;
     }
 
+    .contact form textarea,
+    .contact form select,
+    .contact form input[type="submit"] {
+        padding: 4px;
+    }
+
+}
+
+@media (max-width: 480px) {
     form h1 {
         font-size: 22px;
     }
@@ -201,6 +213,15 @@ p{
 
     .navbar a {
         font-size: 16px;
+    }
+    .contact {
+        padding: 10px;
+    }
+
+    .contact form textarea,
+    .contact form select,
+    .contact form input[type="submit"] {
+        padding: 8px;
     }
 }
 
